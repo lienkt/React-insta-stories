@@ -1,3 +1,7 @@
+html {
+  font-size: 66.67%;
+}
+
 body {
   margin: 0 !important;
 }
@@ -13,13 +17,13 @@ body {
 
 .Content {
   position: relative;
-  width: 500px;
+  width: 50rem;
   background-color: white;
-  border: 1px solid #d9d9d9;
+  border: 0.1rem solid #d9d9d9;
 }
 
 .Home {
-  margin: 14px;
+  margin: 1.4rem;
   height: 100vh;
 }
 
@@ -32,86 +36,86 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 58px;
-  height: 58px;
-  border-radius: 50px;
-  border: 3.5px solid #2676b2;
+  width: 5.8rem;
+  height: 5.8rem;
+  border-radius: 5rem;
+  border: 0.35rem solid #2676b2;
 }
 
 .verify-icon {
-  width: 25px;
+  width: 2.5rem;
 }
 
 .verify-info {
-  margin-left: 7px;
+  margin-left: 0.7rem;
 }
 
 .verify-info .id {
-  margin: 5px 0 0 0;
-  font-size: 15px;
+  margin: 0.5rem 0 0 0;
+  font-size: 1.5rem;
 }
 
 .verify-info .thank {
-  margin: 10px 0 0 0;
-  font-size: 24px;
+  margin: 1rem 0 0 0;
+  font-size: 2.4rem;
 }
 
 .Home-confirm {
-  margin-top: 24px;
-  border-radius: 5px;
-  border: 1px solid #d9d9d9;
-  padding: 14px;
+  margin-top: 2.4rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #d9d9d9;
+  padding: 1.4rem;
 }
 
 .Home-confirm .message-1 {
-  font-size: 17px;
-  margin-top: 0px;
+  font-size: 1.7rem;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
 .Home-confirm .message-2 {
-  font-size: 14px;
-  margin-top: 7px;
+  font-size: 1.4rem;
+  margin-top: 0.7rem;
 }
 
 .Home-confirm .button {
   width: 100%;
-  height: 40px;
+  height: 4rem;
   border: none;
   color: white;
-  font-size: 14px;
+  font-size: 1.4rem;
   cursor: pointer;
   background-color: rgba(234, 156, 182, 0.5);
-  border-radius: 5px;
+  border-radius: 0.5rem;
 }
 
 .Home-shops {
-  margin-top: 24px;
-  border-radius: 5px;
-  border: 1px solid #d9d9d9;
+  margin-top: 2.4rem;
+  border-radius: 0.5rem;
+  border: 0.1rem solid #d9d9d9;
 }
 
 .Home-shops .shops {
-  margin: 26px 26px 15px 26px;
+  margin: 2.6rem 2.6rem 1.5rem 2.6rem;
   display: flex;
   justify-content: space-between;
 }
 
 .Home-shops .shops .shop img {
   cursor: pointer;
-  width: 90px;
-  height: 90px;
+  width: 9rem;
+  height: 9rem;
 }
 
 .Home-shops .shops .shop p {
   text-align: center;
   font-weight: 700;
-  font-size: 10px;
+  font-size: 1rem;
 }
 
 .Home-shops .power {
-  margin: 0 0 10px 10px;
-  font-size: 10px;
+  margin: 0 0 1rem 1rem;
+  font-size: 1rem;
 }
 
 .Story {
@@ -133,20 +137,23 @@ body {
 
 .Story .close-img {
   position: absolute;
-  top: 15px;
-  right: 10px;
-  width: 20px;
-  height: 20px;
+  top: 1.5rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
   z-index: 1000;
 }
 
 @media only screen and (max-width: 768px) {
+  html {
+    font-size: 100%;
+  }
+
   .App {
     flex-direction: column;
     justify-content: flex-start;
     height: auto;
   }
-
 
   .Content {
     width: 100vw;
@@ -164,5 +171,29 @@ body {
 
   .Story .story-item {
     height: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  html {
+    font-size: 40%;
   }
 }
