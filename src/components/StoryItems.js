@@ -18,8 +18,13 @@ const StoryItems = (props) => {
     }
   };
   
-  const closeStoryFrom = (s, st) => {
-    console.log('story ended', s, st);
+  const closeStoryFrom = () => {
+    console.log('One story ended');
+    props.closeStoryFrom();
+  }
+
+  const closeAllStoryFrom = (s, st) => {
+    console.log('All story ended', s, st);
     props.closeStoryFrom();
     if (props.story.shopId < 2) {
       props.openStoryFrom(props.story.shopId + 1);
@@ -36,8 +41,12 @@ const StoryItems = (props) => {
           height={"100%"}
           defaultInterval={3600}
           stories={storyData(storyList)}
-					onAllStoriesEnd={(s, st) => closeStoryFrom(s, st)}
+					onAllStoriesEnd={(s, st) => closeAllStoryFrom(s, st)}
           storyContainerStyles={{ overflow: 'hidden' }} />
+          <img
+            className="close-img" onClick={closeStoryFrom}
+            src={require('../assets/icons/close.png')}
+            alt=""/>
         </div>
       }
     }
